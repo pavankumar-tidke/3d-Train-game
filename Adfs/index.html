@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <svg id="trainMap" width="500" height="100">
+            <rect x="0" y="40"  width="50" height="10" rx="5" ry="5" fill="red" />
+            <rect x="60" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="120" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="180" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="240" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="300" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="360" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <rect x="420" y="40" width="50" height="10" rx="5" ry="5" fill="gray" />
+            <!-- Add more segments as needed -->
+          </svg>
+    </div>
+
+    <script>
+        const trainMap = document.getElementById('trainMap');
+  const train = trainMap.querySelector('rect[fill="red"]');
+  let currentPosition = parseInt(train.getAttribute('x'));
+  
+  console.log(currentPosition);
+
+  function moveTrain(direction) {
+    const segments = Array.from(trainMap.querySelectorAll('rect'));
+    const currentIndex = segments.findIndex(segment => segment === train);
+
+    if (direction === 'forward') {
+        segments[currentIndex + 3].setAttribute('fill', 'red');
+      segments[currentIndex -1].setAttribute('fill', 'gray');
+      currentPosition = parseInt(segments[currentIndex + 3].getAttribute('x'));
+      train.setAttribute('x', currentPosition);
+    } else if (direction === 'backward' && currentIndex > 0) {
+      segments[currentIndex].setAttribute('fill', 'gray');
+      segments[currentIndex - 1].setAttribute('fill', 'red');
+      currentPosition = parseInt(segments[currentIndex - 1].getAttribute('x'));
+      train.setAttribute('x', currentPosition);
+    }
+  }
+
+  // Example: Move train forward after 2 seconds
+  setInterval(() => {
+    moveTrain('forward');
+  }, 1000);
+    </script>
+</body>
+</html>
