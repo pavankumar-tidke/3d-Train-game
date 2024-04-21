@@ -1,0 +1,23 @@
+<svg id="trackLine2" class="border- my-10" width="600" height="20">
+    <rect id="track-0" class="track-0" x="0" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-32" class="track-1" x="32" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-64" class="track-2" x="64" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-96" class="track-3" x="96" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-128" class="track-4" x="128" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-160" class="track-5" x="160" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-192" class="track-6" x="192" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-224" class="track-7" x="224" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-256" class="track-8" x="256" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-288" class="track-9" x="288" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-320" class="track-10" x="320" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-352" class="track-11" x="352" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-384" class="track-12" x="384" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-416" class="track-13" x="416" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-448" class="track-14" x="448" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-480" class="track-15" x="480" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-512" class="track-16" x="512" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-544" class="track-17" x="544" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-576" class="track-18" x="576" y="10" width="30" height="3" fill="gray" />
+    <rect id="track-608" class="track-19" x="608" y="10" width="30" height="3" fill="gray" />
+
+</svg>
